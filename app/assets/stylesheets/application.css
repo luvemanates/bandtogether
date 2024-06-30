@@ -17,23 +17,38 @@ html {
 }
 body {
 }
-#grid_container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+#body_container {
+  width: 100%;
+  /*grid-template-columns: auto-fit, 1fr;
   gap: 10px;
-  grid-auto-rows: minmax(100px, auto);
+  grid-auto-rows: minmax(50px, auto);
+  */
 }
 #menu {
-  grid-column: 1/-1;
+  /*grid-column: 1/-1;
   grid-row: 1;
+  */
+  width: 100%;
 }
 #recent_news {
-  grid-column: 1/2;
+  /*grid-column: 1/2;
   grid-row: 2;
+  max-width: 300px;
+  */
+  float: left;
+  width: 20%;
 }
 #page_content {
+  /*
   grid-column: 2/2;
   grid-row: 2;
+  grid-row: 80%;
+  */
+  float: left;
+  width: 80%;
+}
+.clear {
+  clear: both;
 }
 .sout {
   outline: 1px solid blue;
