@@ -16,6 +16,10 @@
 html {
 }
 body {
+  background-image: url('bandtogether_background.png');
+  background-repeat: repeat;
+  margin: 0;
+  padding: 0;
 }
 #body_container {
   width: 100%;
@@ -45,11 +49,25 @@ body {
   grid-row: 80%;
   */
   float: left;
-  width: 80%;
+  width: 70%;
 }
 .clear {
   clear: both;
 }
 .sout {
   outline: 1px solid blue;
+}
+#logo {
+  float: left;
+  background-image: url('logo.png');
+  width: 110px;
+  height: 926px;
+}
+#tree_branch {
+  background-image: url('tree_branch.png');
+  position: absolute;
+  top: 80vh;
+  left: 80vw;
+  width: 690px;
+  height: 690px;
 }
