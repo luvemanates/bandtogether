@@ -11,6 +11,17 @@
   </head>
 
   <body>
-    <%= yield %>
+    <div id="grid_container">
+      <div id="menu">
+        Menu div
+      </div>
+      <div id="recent_news">
+        Recent news div
+      </div>
+      <div id="page_content">
+        Page content div
+        <%= yield %>
+      </div>
+    </div>
   </body>
 </html>
