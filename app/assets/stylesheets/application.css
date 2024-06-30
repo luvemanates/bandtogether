@@ -19,19 +19,22 @@ body {
 }
 #grid_container {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr 1fr;
   gap: 10px;
   grid-auto-rows: minmax(100px, auto);
 }
 #menu {
-  grid-column: 1/2;
+  grid-column: 1/-1;
   grid-row: 1;
 }
 #recent_news {
-  grid-column: 1;
-  grid-row: 2/;
+  grid-column: 1/2;
+  grid-row: 2;
 }
 #page_content {
-  grid-column: 1/2;
-  grid-row: 2/;
+  grid-column: 2/2;
+  grid-row: 2;
+}
+.sout {
+  outline: 1px solid blue;
 }
