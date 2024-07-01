@@ -13,6 +13,22 @@
  *= require_tree .
  *= require_self
  */
+@import url('Mukta-Bold.ttf');
+@font-face {
+        font-family: 'Mukta-Bold';
+        src: url('Mukta-Bold.ttf');
+}
+@import url('Mukta-Regular.ttf');
+@font-face {
+        font-family: 'Mukta-Regular';
+        src: url('Mukta-Regular.ttf');
+}
+@import url('URWGothic-Demi.otf');
+@font-face {
+        font-family: 'URWGothic-Demi';
+        src: url('URWGothic-Demi.otf');
+}
+
 html {
 }
 body {
@@ -33,6 +49,7 @@ body {
   grid-row: 1;
   */
   width: 100%;
+  font-family: 'Mukta-Bold';
 }
 #recent_news {
   /*grid-column: 1/2;
@@ -41,6 +58,7 @@ body {
   */
   float: left;
   width: 20%;
+  font-family: 'Mukta-Regular';
 }
 #page_content {
   /*
@@ -50,6 +68,7 @@ body {
   */
   float: left;
   width: 70%;
+  font-family: 'URWGothic-Demi';
 }
 .clear {
   clear: both;
