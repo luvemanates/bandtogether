@@ -21,22 +21,24 @@
       <div id="logo">
         &nbsp;
       </div>
-      <div id="page_content" class="sout">
-        Page content div
-        <%= yield %>
-      </div>
-      <div class="clear">
+      <div id="page_content_container" class="sout">
+        <div id="page_content" class="sout">
+          Page content div
+          <%= yield %>
+        </div>
       </div>
     </div>
-    <div id="tree_branch">
+    <footer id="tree_branch">
       &nbsp;
-    </div>
+    </footer>
   </body>
   <script type="text/javascript">
+    /*
         var windowHeight = window.innerHeight;
         var windowWidth = window.innerWidth;
-        document.getElementById('tree_branch').style.height = (windowHeight - 690) + "px";
-        document.getElementById('tree_branch').style.width = (windowWidth - 690) + "px";
+        document.getElementById('tree_branch').style.top = (windowHeight) + "px";
+        document.getElementById('tree_branch').style.left = (windowWidth) + "px";
+        */
   </script>
 
 </html>
