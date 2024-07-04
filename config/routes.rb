@@ -1,12 +1,13 @@
 Rails.application.routes.draw do
-  devise_for :users, controllers: {
-    sessions: 'users/sessions',
-    confirmations: 'users/confirmations',
-    registrations: 'users/registrations',
-    unlocks: 'users/unlocks',
-    passwords: 'users/passwords',
-    omniauth_callbacks: 'users/omniauth_callbacks'
-  }
+  resources :problem_entries
+  devise_for :users #, controllers: {
+ #    sessions: 'users/sessions',
+  #   confirmations: 'users/confirmations',
+   #  registrations: 'users/registrations',
+    # unlocks: 'users/unlocks',
+     #passwords: 'users/passwords',
+     #omniauth_callbacks: 'users/omniauth_callbacks'
+   #}
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   # Reveal health status on /up that returns 200 if the app boots with no exceptions, otherwise 500.
@@ -15,6 +16,6 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   devise_scope :user do
-    root :to => 'users/sessions#new'
+    root :to => 'problem_entries#index'
   end
 end

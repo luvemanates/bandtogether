@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @problem_entry %>
+
+<div>
+  <%= link_to "Edit this problem entry", edit_problem_entry_path(@problem_entry) %> |
+  <%= link_to "Back to problem entries", problem_entries_path %>
+
+  <%= button_to "Destroy this problem entry", @problem_entry, method: :delete %>
+</div>

@@ -19,7 +19,11 @@
         Recent bands
       </div>
       <div class="mitem">
-        Log in
+        <% if user_signed_in? %>
+          <%= link_to 'Log out', destroy_user_session_path %>
+        <% else %>
+          <%= link_to 'Log in', user_session_path %>
+        <% end %>
       </div>
       <div class="mitem">
         Search
