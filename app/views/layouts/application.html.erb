@@ -16,7 +16,16 @@
         About
       </div>
       <div class="mitem">
+        Recent Solutions
+      </div>
+      <div class="mitem">
+        Recent Bands
+      </div>
+      <div class="mitem">
         <%= link_to 'Recent Problems', problem_entries_path %>
+      </div>
+      <div class="mitem">
+        Recent Pledges
       </div>
       <div class="mitem">
         <% if user_signed_in? %>
@@ -30,6 +39,15 @@
       </div>
       <div class="mitem">
         Popular Bands
+      </div>
+      <div class="mitem">
+        Popular Problems
+      </div>
+      <div class="mitem">
+        Popular Pledges
+      </div>
+      <div class="mitem">
+        Popular Solutions
       </div>
     </div>
     <div id="body_container" class="sout">
@@ -50,9 +68,11 @@
       </div>
       <div id="page_content_container" class="sout">
         <div id="page_content" class="sout">
-          Page content div
           <%= yield %>
         </div>
+      </div>
+      <div class="data_divider_horz">
+        &nbsp;
       </div>
     </div>
     <footer id="tree_branch">

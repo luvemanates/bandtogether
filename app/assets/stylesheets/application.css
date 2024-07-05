@@ -59,8 +59,6 @@ body {
   grid-row: 1;
   */
   width: 100%;
-  font-family: 'Mukta-Bold';
-  font-size: 32px;
   display: inline-flex;
   max-height: 60px;
   flex-direction: row;
@@ -68,17 +66,20 @@ body {
   justify-content: flex-start;
   align-content: stretch;
   align-items: flex-start;
-  opacity: 42.8%;
-  background-color: #4a81ff;
+  /*opacity: 42.8%;
+  background-color: #4a81ff; */
+  background-color:rgba(74, 129, 255, 0.428);
 }
 .mitem {
+  font-family: 'Mukta-Bold';
+  font-size: 19px;
   opacity: 100%;
   color: black;
-  margin-left: 45px;
+  margin-left: 20px;
   order: 0;
   flex: 0 1 auto;
   align-self: auto;
-  min-width: 202px;
+  min-width: 70px;
 }
 #recent_news {
   /*grid-column: 1/2;
