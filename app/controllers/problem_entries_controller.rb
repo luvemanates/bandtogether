@@ -21,7 +21,8 @@ class ProblemEntriesController < ApplicationController
 
   # POST /problem_entries or /problem_entries.json
   def create
-    @problem_entry = ProblemEntry.new(problem_entry_params)
+    (redirect_to ( new_user_session_path) and return) unless user_signed_in?
+    @problem_entry = ProblemEntry.new(problem_entry_params.merge(:creator => current_user))
 
     respond_to do |format|
       if @problem_entry.save
@@ -36,6 +37,8 @@ class ProblemEntriesController < ApplicationController
 
   # PATCH/PUT /problem_entries/1 or /problem_entries/1.json
   def update
+    (redirect_to ( new_user_session_path) and return) unless user_signed_in?
+    (redirect_to ( problem_entries_path) and return) unless (current_user == @problem_entry.creator)
     respond_to do |format|
       if @problem_entry.update(problem_entry_params)
         format.html { redirect_to problem_entry_url(@problem_entry), notice: "Problem entry was successfully updated." }
@@ -49,6 +52,8 @@ class ProblemEntriesController < ApplicationController
 
   # DELETE /problem_entries/1 or /problem_entries/1.json
   def destroy
+    (redirect_to ( new_user_session_path) and return) unless user_signed_in?
+    (redirect_to ( problem_entries_path) and return) unless (current_user == @problem_entry.creator)
     @problem_entry.destroy!
 
     respond_to do |format|
