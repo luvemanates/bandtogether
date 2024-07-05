@@ -16,11 +16,11 @@
         About
       </div>
       <div class="mitem">
-        Recent bands
+        <%= link_to 'Recent Problems', problem_entries_path %>
       </div>
       <div class="mitem">
         <% if user_signed_in? %>
-          <%= link_to 'Log out', destroy_user_session_path %>
+          <%= link_to 'Log out', destroy_user_session_path, data: {:turbo_method => 'delete'} %>
         <% else %>
           <%= link_to 'Log in', user_session_path %>
         <% end %>
@@ -33,10 +33,19 @@
       </div>
     </div>
     <div id="body_container" class="sout">
+      <div class="data_divider_vert">
+        &nbsp;
+      </div>
       <div id="recent_news" class="sout">
         Recent news div
       </div>
+      <div class="data_divider_vert">
+        &nbsp;
+      </div>
       <div id="logo">
+        &nbsp;
+      </div>
+      <div class="data_divider_vert">
         &nbsp;
       </div>
       <div id="page_content_container" class="sout">

@@ -34,17 +34,17 @@ html {
 body {
   background-image: url('bandtogether_background.png');
   background-repeat: repeat;
-  margin: 0;
-  padding: 0;
-  max-width: 1200px;
-  min-width: 800px;
-  margin: 0 auto;
 }
 #body_container {
   /*grid-template-columns: auto-fit, 1fr;
   gap: 10px;
   grid-auto-rows: minmax(50px, auto);
   */
+  margin: 0;
+  padding: 0;
+  max-width: 1200px;
+  min-width: 800px;
+  margin: 0 auto;
   width: 100%;
   display: inline-flex;
   flex-direction: row;
@@ -68,8 +68,12 @@ body {
   justify-content: flex-start;
   align-content: stretch;
   align-items: flex-start;
+  opacity: 42.8%;
+  background-color: #4a81ff;
 }
 .mitem {
+  opacity: 100%;
+  color: black;
   margin-left: 45px;
   order: 0;
   flex: 0 1 auto;
@@ -128,4 +132,17 @@ body {
   margin-left: auto;
   margin-right: -183px;
   margin-bottom: -100px;
+}
+.data_divider_vert {
+  min-height: 1000px;
+  height: 100%;
+  width: 7px;
+  background-color: #4a81ff;
+  opacity: 32.8%;
+}
+.data_divider_horz {
+  height: 7px;
+  width: 100%;
+  opacity: 32.8%;
+  background-color: #4a81ff;
 }
