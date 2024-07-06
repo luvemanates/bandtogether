@@ -142,6 +142,7 @@ body {
   opacity: 32.8%;
 }
 .data_divider_horz {
+	clear: both;
   height: 7px;
   width: 100%;
   opacity: 32.8%;
