@@ -16,16 +16,10 @@
         About
       </div>
       <div class="mitem">
-        Recent Solutions
-      </div>
-      <div class="mitem">
-        Recent Bands
-      </div>
-      <div class="mitem">
         <%= link_to 'Recent Problems', problem_entries_path %>
       </div>
       <div class="mitem">
-        Recent Pledges
+        Recent ⯆
       </div>
       <div class="mitem">
         <% if user_signed_in? %>
@@ -38,16 +32,7 @@
         Search
       </div>
       <div class="mitem">
-        Popular Bands
-      </div>
-      <div class="mitem">
-        Popular Problems
-      </div>
-      <div class="mitem">
-        Popular Pledges
-      </div>
-      <div class="mitem">
-        Popular Solutions
+        Popular ⯆
       </div>
     </div>
     <div id="body_container" class="sout">
@@ -71,10 +56,18 @@
           <%= yield %>
         </div>
       </div>
-      <div class="data_divider_horz">
-        &nbsp;
+    </div>
+    <div class="data_divider_horz">
+      &nbsp;
+    </div>
+
+    <div class="dropdown">
+      <span>Mouse over me</span>
+      <div class="dropdown-content">
+        <p>Hello World!</p>
       </div>
     </div>
+
     <footer id="tree_branch">
       &nbsp;
     </footer>
