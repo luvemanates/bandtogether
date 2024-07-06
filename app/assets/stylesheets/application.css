@@ -35,16 +35,17 @@ body {
   background-image: url('bandtogether_background.png');
   background-repeat: repeat;
 }
-#body_container {
+#body_page {
+  margin: 0 auto;	
+  max-width: 1200px;
+  min-width: 800px;
+}
+#body_container_flex {
   /*grid-template-columns: auto-fit, 1fr;
   gap: 10px;
   grid-auto-rows: minmax(50px, auto);
   */
-  margin: 0;
   padding: 0;
-  max-width: 1200px;
-  min-width: 800px;
-  margin: 0 auto;
   width: 100%;
   display: inline-flex;
   flex-direction: row;
@@ -137,7 +138,7 @@ body {
   height: 690px;
   margin-top: auto;
   margin-left: auto;
-  margin-right: -183px;
+  margin-right: -8px;
   margin-bottom: -100px;
 }
 .data_divider_vert {
